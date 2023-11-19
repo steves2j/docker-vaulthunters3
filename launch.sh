@@ -7,7 +7,7 @@ if ! [[ -w "/data" ]]; then
   exit 66
 fi
 
-FORGE_VERSION=1.18.2-40.2.9
+FORGE_VERSION=1.18.2-40.2.1
 # https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.2-40.1.61/forge-1.18.2-40.1.61-installer.jar
 
 cd /data
@@ -20,9 +20,9 @@ else
 fi
 
 
-if ! [[ -f "Vault Hunters 3rd Edition-3.11.0 - Server Files.zip" ]]; then
+if ! [[ -f "Vault Hunters 3rd Edition-3.10.1_Server-Files.zip" ]]; then
   rm -fr config mods defaultconfigs scripts forge-*.jar start.sh *Server.zip
-	curl -Lo 'Vault Hunters 3rd Edition-3.11.0 - Server Files.zip' 'https://edge.forgecdn.net/files/4641/781/Vault Hunters 3rd Edition-3.11.0 - Server Files.zip' && unzip -u -o 'Vault Hunters 3rd Edition-3.11.0 - Server Files.zip' -d /data
+	curl -Lo 'Vault Hunters 3rd Edition-3.10.1_Server-Files.zip' 'https://edge.forgecdn.net/files/4570/185/Vault Hunters 3rd Edition-3.10.1_Server-Files.zip' && unzip -u -o 'Vault Hunters 3rd Edition-3.10.1_Server-Files.zip' -d /data
   curl -Lo forge-${FORGE_VERSION}-installer.jar 'https://maven.minecraftforge.net/net/minecraftforge/forge/'${FORGE_VERSION}'/forge-'${FORGE_VERSION}'-installer.jar'
   java -jar forge-${FORGE_VERSION}-installer.jar --installServer && rm -f forge-${FORGE_VERSION}-installer.jar
 fi
