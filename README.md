@@ -36,7 +36,7 @@ These environment variables can be set at run time to override their defaults.
 
 * JVM_OPTS "-Xms6144m -Xmx8192m"
 * MOTD "Vault Hunters 3rd Edition-3.12.4 Server Powered by Docker"
-* LEVEL 
+* LEVEL world
 
 ### Adding Minecraft Operators
 
