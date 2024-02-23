@@ -7,6 +7,8 @@ LABEL version="3.13"
 RUN apt-get update && apt-get install -y curl && \
  adduser --uid 99 --gid 100 --home /data --disabled-password minecraft
 
+RUN apt-get install -y SCREEN
+
 COPY launch.sh /launch.sh
 RUN chmod +x /launch.sh
 
